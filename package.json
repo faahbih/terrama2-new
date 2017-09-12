@@ -1,7 +1,7 @@
 {
-  "title": "Modern Business",
+  "title": "TerraMA²",
   "name": "startbootstrap-modern-business",
-  "version": "4.0.0-beta",
+  "version": "1.0.0-beta",
   "description": "A multipurpose HTML website template built with Bootstrap",
   "keywords": [
     "css",
@@ -13,8 +13,8 @@
   ],
   "homepage": "https://startbootstrap.com/template-overviews/modern-business",
   "bugs": {
-    "url": "https://github.com/BlackrockDigital/startbootstrap-modern-business/issues",
-    "email": "feedback@startbootstrap.com"
+    "url": "",
+    "email": ""
   },
   "license": "MIT",
   "author": "Start Bootstrap",
