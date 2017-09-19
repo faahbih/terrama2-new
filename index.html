@@ -11,6 +11,7 @@
 
   <title>TerraMA²</title>
   <link href="images/logo-terraMa2.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   <!-- Bootstrap core CSS ====================================== -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,14 +29,14 @@
 
 <body>
 <!-- Gov -->
-    <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;"> 
+   <!--  <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;"> 
       <ul id="menu-barra-temp" style="list-style:none;">
         <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
           <a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a></li> 
         <li>
           <a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
       </ul>
-    </div>
+    </div> -->
 <!-- ./Gov -->    
 
 <!-- Navigation -->
@@ -281,14 +282,56 @@
 
         </div>
 
+        <!-- image -->
         <div class="col-lg-6">
-          <img class="img-fluid rounded" src="images/NovoTerrama2.jpg" alt="Sistema TerraMA²">
+          <!-- <img class="img-fluid rounded" src="images/NovoTerrama2.jpg" alt="Sistema TerraMA²"> -->
+                
+          <!-- Trigger the modal with a button -->
+          <!-- <button type="button" class="btn" data-toggle="modal" data-target="#myModal"><img class="img-fluid rounded" src="images/NovoTerrama2.jpg" alt="Sistema TerraMA²"></button> -->
+
+          <!-- Modal -->
+            <!-- <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <!-- div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Plataforma TerraMA²</h4>
+                </div>
+                
+                <div class="modal-body">
+                  <p>Some text in the modal.</p>
+                </div>
+                
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+              </div>
+            </div> -->
+
+
+            <!-- animation -->
+            <img src="images/NovoTerrama2.jpg" style="width:80%;cursor:zoom-in"
+                onclick="document.getElementById('modal01').style.display='block'">
+
+            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+              <span class="w3-button w3-hover-red w3-xlarge w3-display-bottomright">&times;</span>
+              <div class="w3-modal-content w3-animate-zoom">
+                <img src="images/NovoTerrama2.jpg" style="width:100%">
+              </div>
+            </div>
+
         </div>
+
       </div>
       
   <!-- /.row -->
 
       <hr>
+
 
   <!-- Call to Action Section -->
   
