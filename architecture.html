@@ -11,6 +11,9 @@
     <title>TerraMA² | Arquitetura</title>
     <link href="images/logo-terraMa2.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
+    <!-- Animation Image-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -145,7 +148,19 @@
           <img class="img-fluid rounded mb-4" src="http://placehold.it/750x450" alt="">
         </div> -->
         <div class="col-lg-12"> 
-          <img class="img-fluid rounded" src="images/modelo_terrama2_v4_portugues.png"> 
+          <!-- <img class="img-fluid rounded" src="images/modelo_terrama2_v4_portugues.png"> -->
+
+          <!-- animation -->
+            <img src="images/modelo_terrama2_v4_portugues.png" style="width:75%;cursor:zoom-in"
+                onclick="document.getElementById('modal01').style.display='block'">
+
+            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+              <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+              <div class="w3-modal-content w3-animate-zoom">
+                <img src="images/modelo_terrama2_v4_portugues.png" style="width:100%">
+              </div>
+            </div>
+            <!-- ./animation -->
         </div>
 
         <div class="col-lg-12">
@@ -153,14 +168,18 @@
           <p>Cada serviço realiza um conjunto de tarefas que se relacionam entre si. Os serviços podem ser executados localmente ou remotamente, sendo eles:</p>
           
           <ul>
-            <li>Serviço de Coleta : Responsável pela coleta dos dados ambientais disponibilizados por servidores de dados, buscando periodicamente dados ambientais. Caso sejam encontrados, tais dados são baixados e incluídos na base de dados do projeto. Os tipos de servidores de dados e sua localização são definidos através da interface web do módulo de administração.</li>
-            <li>Serviço de Interpolação : Responsável pela interpolação dos dados de PCD ou ocorrências coletados, produzindo novos dados matriciais dinamicamente gerados.</li>
-            <li>Serviço de Análise : Responsável pelo cruzamento entre dos dados ambientais (hidrometeorológicos) e dados estáticos. Uma análise configurada produzirá novos dados dinâmicos, seja geográficos ou tabulares. Os modelos de análises são desenvolvidos com a linguagem de programação Phyton mais operadores geográficos da TerraLib.</li>
-            <li>Serviço de Visualização : Responsável por publicar dados estáticos, dinâmicos ou resultados de análises no módulo de monitoramento. O serviço utiliza o Geoserver para criar as camadas a serem publidadas, juntamente com o estilo a ser apresentado.</li>
-            <li>Serviço de Alerta : Responsável pelo envio de mensagens e relatórios contendo informações a respeito das alterações nos níveis de risco detectados pelo serviço de análise. Os usuários devem se cadastrar como observadores das análises para receberem os relatórios de alteração, enviados através de correio eletrônico.</li>
+            <li><p><b>Serviço de Coleta:</b> Responsável pela coleta dos dados ambientais disponibilizados por servidores de dados, buscando periodicamente dados ambientais. Caso sejam encontrados, tais dados são baixados e incluídos na base de dados do projeto. Os tipos de servidores de dados e sua localização são definidos através da interface web do módulo de administração.</p></li>
+
+            <li><p><b>Serviço de Interpolação:</b> Responsável pela interpolação dos dados de PCD ou ocorrências coletados, produzindo novos dados matriciais dinamicamente gerados.</p></li>
+
+            <li><p><b>Serviço de Análise:</b> Responsável pelo cruzamento entre dos dados ambientais (hidrometeorológicos) e dados estáticos. Uma análise configurada produzirá novos dados dinâmicos, seja geográficos ou tabulares. Os modelos de análises são desenvolvidos com a linguagem de programação Phyton mais operadores geográficos da TerraLib.</p></li>
+
+            <li><p><b>Serviço de Visualização:</b> Responsável por publicar dados estáticos, dinâmicos ou resultados de análises no módulo de monitoramento. O serviço utiliza o Geoserver para criar as camadas a serem publidadas, juntamente com o estilo a ser apresentado.</p></li>
+            
+            <li><p><b>Serviço de Alerta:</b> Responsável pelo envio de mensagens e relatórios contendo informações a respeito das alterações nos níveis de risco detectados pelo serviço de análise. Os usuários devem se cadastrar como observadores das análises para receberem os relatórios de alteração, enviados através de correio eletrônico.</p></li>
           </ul>
           
-          <p>A Figura acima mostra ainda exemplo de alguns dados disponíveis em uma base de dados de um projeto. Note que há dados dinâmicos que são adquiridos pelo serviço de coleta, dados dinâmicos que são gerados pela plataforma como resultado de análises e dados dinâmicos disponíveis por outras tecnologias como radares, satélites ou outros bancos de dados que estão localmente na mesma rede de computadores onde está a plataforma TerraMA2. Parte dos dados dinâmicos coletados, como dados de PCD´s e ocorrências, devem ser armazenados em um banco espacial PostgreSQL+PostGIS.</p>
+          <p>A Figura acima mostra ainda exemplo de alguns dados disponíveis em uma base de dados de um projeto. Note que há dados dinâmicos que são adquiridos pelo serviço de coleta, dados dinâmicos que são gerados pela plataforma como resultado de análises e dados dinâmicos disponíveis por outras tecnologias como radares, satélites ou outros bancos de dados que estão localmente na mesma rede de computadores onde está a plataforma TerraMA2. Parte dos dados dinâmicos coletados, como dados de PCD's e ocorrências, devem ser armazenados em um banco espacial PostgreSQL+PostGIS.</p>
 
         </div>
 
