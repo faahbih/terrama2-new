@@ -11,7 +11,7 @@
 
   <title>TerraMA²</title>
   <link href="images/logo-terraMa2.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 
   <!-- Bootstrap core CSS ====================================== -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -138,27 +138,27 @@
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below --> 
           <div class="carousel-item active"> <!-- url('http://placehold.it/1900x1080') -->
-            <img class="d-block w-100" src="images/wildfire-1.png">
+            <img class="d-block w-100" src="images/wildfire.png">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Queimadas</h3>
+              <!-- <h1>Queimadas</h1> -->
               <!-- <p>This is a description for the first slide.</p> -->
             </div>
           </div>
           
           <!-- Slide Two - Set the background image for this slide in the line below -->
           <div class="carousel-item"> <!-- style="background-image: url('http://placehold.it/1900x1080')" -->
-            <img class="d-block w-100" src="images/storm-1.png">
+            <img class="d-block w-100" src="images/storm.png">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Raios</h3>
+              <!-- <h1>Raios</h1> -->
              <!--  <p>This is a description for the second slide.</p> -->
             </div>
           </div>
           
           <!-- Slide Three - Set the background image for this slide in the line below -->
           <div class="carousel-item"> <!--style="background-image: url('http://placehold.it/1900x1080')"> -->
-            <img class="d-block w-100" src="images/inundation-1.png">
+            <img class="d-block w-100" src="images/inundation.png">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Inundações</h3>
+              <!-- <h1>Inundações</h1> -->
               <!-- <p>This is a description for the third slide.</p> -->
             </div>
           </div>
@@ -167,7 +167,7 @@
           <div class="carousel-item"><!--style="background-image: url('http://placehold.it/1900x1080')">-->
             <img class="d-block w-100" src="images/terrama2_v4.png">
             <div class="carousel-caption d-none d-md-block">
-             <!--  <h3>Third Slide</h3> -->
+             <!--  <h1>Third Slide</h1> -->
              <!-- <p>This is a description for the third slide.</p>-->
            </div>
          </div>
@@ -381,36 +381,26 @@
 
         <div class="col-md-12">
           <h3 class="my-3">Novidades e Melhorias na versão 3</h3>
-          <p>A nova versão do TerraMA² (antigo SISMADEN) têm as seguintes funcionalidade e melhorias ...</p>
+          <p>A nova versão do TerraMA² (antigo SISMADEN) têm as seguintes funcionalidade e melhorias:</p>
+
+          <ul>
+            <li>
+              <b>Coleta de dados pontuais em diferentes localizações:</b>
+              <p>Além da coleta de dados de pontos fixos como PCD (Plataforma de Coleta de Dados) será possível coletar dados relacionados a ocorrência de fenômenos pontuais em diferentes localizações, tais como: focos de calor (incêndios), epidemias, doenças em culturas, etc. Além da localização dos pontos (latitude / longitude) e da data/hora de ocorrência, outros atributos poderão estar associados à ocorrência.</p>
+            </li>
+            <li>
+              <b>Pré-processamento sobre dados pontuais em diferentes localizações:</b>
+              <p>Ao inserir uma ocorrência no banco, será possivel configurar a intersecção espacial do ponto com vários planos vetoriais ou matriciais, armazenando o resultado na forma de atributo do ponto. No caso de cruzamento do ponto com planos vetoriais de polígonos, em havendo intersecção espacial, deve-se permitir escolher um ou mais atributos do polígono que serão transferidos para o ponto. No caso de cruzamento do ponto com um plano matricial (imagem ou grades numéricas) deve recuperar o valor do plano matricial e armazenar seu valor em um atributo associado ao ponto. Este pré-processamento deverá ser configurado no momento de inserção do ponto no banco de dados, como uma regra de coleta de dado definida pelo usuário...</p>
+            </li>
+            
+          </ul>
           
-          <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#exampleModal">Saiba mais 
+          <a class="btn btn-primary" href="new-two.html">Saiba mais 
             <!-- <span class="glyphicon glyphicon-chevron-right"></span> -->
           </a>
         </div>
       </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Novidades e Melhorias na versão 3</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              
-              <div class="modal-body">
-                <p>A nova versão do TerraMA² (antigo SISMADEN) têm as seguintes funcionalidade e melhorias:</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      <!-- .Modal -->  
   <!-- ./News Section -->
 
       <br>
@@ -466,9 +456,6 @@
         <p class="m-0 text-center text-black">Copyright &copy; TerraMA² 2017</p>
       </div>
     </footer>
-
-
-
 
   <!-- /.Footer -->
 
