@@ -27,3 +27,12 @@ body {
 .portfolio-item {
     margin-bottom: 30px;
 }
+
+p{
+    text-align: justify;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
