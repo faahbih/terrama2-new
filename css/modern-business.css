@@ -96,3 +96,23 @@ img {
 .bs-callout-info h4 {
     color: #5bc0de;
 }
+
+
+/*! my Footer */
+footer{
+  color: black;
+}
+footer a{
+  color: black;
+}
+
+.footer-middle{
+    background: #f8f9fa;
+  padding-top: 2em;
+  color: #f09e44;
+}
+
+.footer-bottom{
+  background: #ddd;
+  padding: 2em;
+}
