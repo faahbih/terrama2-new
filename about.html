@@ -10,7 +10,7 @@
   <meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/49020"/>
 
   <title>TerraMA² · Sobre</title>
-  <link href="images/logo-terraMa2.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link href="img/terrama2_logo_100dpi.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,12 +33,12 @@
       <!-- /.Gov -->
 
       <!-- Navigation -->
-      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-light">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-light">  
         <div class="container">
 
           <!-- Logo -->
-          <a href="index.html" title="Home"><img src="img/terrama2_logo_100dpi.png" width="60" height="50" alt="logo terraMa2"></a>
-          
+          <a href="index.html" title="Home" data-toggle="tooltip" data-placement="right"><img src="img/terrama2_logo_100dpi.png" width="60" height="50" alt="logo terraMa2"></a>
+
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -53,6 +53,7 @@
                   <a class="dropdown-item" href="about.html">TerraMA2</a>
                   <a class="dropdown-item" href="team.html">Equipe</a>
                   <a class="dropdown-item" href="architecture.html">Arquitetura</a>
+                  <!-- <a class="dropdown-item" href="#">Notícias</a> -->
                   <a class="dropdown-item" href="contact.html">Contato</a>
                 </div>
               </li>
@@ -62,7 +63,7 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownAbout">
                   <a class="dropdown-item" href="projects.html">Projetos</a>
-                  <a class="dropdown-item" href="portfolio-1-col.html">Estudos de Casos</a>
+                  <a class="dropdown-item" href="#" data-toggle="tooltip" data-placement="right" title="Em Breve!">Estudos de Casos</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -72,8 +73,15 @@
                 <a class="nav-link" href="documentation.html">Documentação</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" title="Em Breve!">Cursos</a>
+                <!-- <a class="nav-link" href="#" title="Em Breve!">Cursos</a> -->
+                <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Em Breve!">Cursos</a>
               </li>
+              <li>
+                <a href="#" class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Em Breve!"><img src="img/flagenglish.png"></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Em Breve!"><img src="img/flagespanha.png"></a>
+              </li>      
             </ul>
           </div>
         </div>
@@ -187,7 +195,7 @@
                 <ul class="list-unstyled">
                   <li><a href="#"></a></li>
                   <li><a href="projects.html">Projetos</a></li>
-                  <li><a href="#" title="Em Breve!">Estudos de Caso</a></li>
+                  <li><a href="#" data-toggle="tooltip" data-placement="left" title="Em Breve!">Estudos de Caso</a></li>
                 </ul>
               </div>
 
@@ -196,7 +204,7 @@
                   <li><a href="#"></a></li>
                   <li><a href="download.html">Download</a></li>
                   <li><a href="documentation.html">Documentação</a></li>
-                  <li><a href="#" title="Em Breve!">Cursos</a></li>
+                  <li><a href="#" data-toggle="tooltip" data-placement="left" title="Em Breve!">Cursos</a></li>
                 </ul>
               </div>
             </div>
@@ -239,6 +247,13 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Script tooltip -->
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+      });
+    </script>
 
   </body>
   </html>
