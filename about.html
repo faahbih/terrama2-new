@@ -17,6 +17,26 @@
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
+
+  <link rel="alternate stylesheet" href="css/contraste.css" title="alto_contraste"/>        
+        <style type="text/css">
+        #footer-brasil {
+          background: none repeat scroll 0% 0% #00420c;
+          padding: 1em 0px;
+          max-width: 100%;
+        }
+        </style>
+        <script type="text/javascript">
+            function alto_contraste(title) {
+                var i, a;
+                for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
+                    if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
+                    a.disabled = true;
+                    if(a.getAttribute("title") == title) a.disabled = false;
+                    }
+                }
+            }
+        </script>
   
 </head>
 
@@ -79,7 +99,9 @@
               </li>
               <li>
                 <a href="#" class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Em Breve!"><img src="img/flagespanha.png"></a>
-              </li>      
+              </li>
+              <li><a href="#" class="iacessibilidade" onclick="alto_contraste('','1')">Contraste Normal</a></li>
+              <li><a href="#" class="iautocontraste" onclick="alto_contraste('alto_contraste','1')">Alto Contraste</a></li>      
             </ul>
           </div>
         </div>
