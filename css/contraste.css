@@ -35,10 +35,6 @@ p{
   color: #fff;
 }
 
-/*.container {
-  background-color: #000;
-}*/
-
 .jumbotron {
   background-color: #000;
 }
@@ -54,7 +50,7 @@ p{
 /* `Barra Acessibilidade
 ----------------------------------------------------------------------------------------------------*/
 
-#acessibilidade a{
+#barra-brasil a{
 	color: #004B82
 }
 
