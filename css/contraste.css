@@ -3,8 +3,12 @@ body {
   color: #fff;  
 }
 
-.navbar{
-  background-color: #000;
+.bg-light{
+  background-color: #000!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
 }
 
 a {
