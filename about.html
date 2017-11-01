@@ -19,17 +19,6 @@
   <link href="css/modern-business.css" rel="stylesheet">
 
   <link rel="alternate stylesheet" href="css/contraste.css" title="alto_contraste"/>
-  <script type="text/javascript">
-    function alto_contraste(title) {
-      var i, a;
-      for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
-        if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
-          a.disabled = true;
-          if(a.getAttribute("title") == title) a.disabled = false;
-        }
-      }
-    }
-  </script>
   
 </head>
 
@@ -92,7 +81,7 @@
                   Documentação
                 </a>
                 <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownAbout">
-                  <a class="dropdown-item" href="#">Apresentações</a>
+                  <a class="dropdown-item" href="presentation.html">Apresentações</a>
                   <a class="dropdown-item" href="guide.html">Manuais</a>
                   <a class="dropdown-item" href="publications.html">Publicações</a>
                   <a class="dropdown-item" href="#">Videos</a>
