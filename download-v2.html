@@ -84,7 +84,7 @@
               </a>
               <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownAbout">
                 <a class="dropdown-item" href="#">Apresentações</a>
-                <a class="dropdown-item" href="#">Manuais</a>
+                <a class="dropdown-item" href="guide.html">Manuais</a>
                 <a class="dropdown-item" href="publications.html">Publicações</a>
                 <a class="dropdown-item" href="#">Videos</a>
               </div>
@@ -121,41 +121,46 @@
 
     </div>
 
+    <div class="container">
       <div class="jumbotron">
 
         <h5> Release 4.0 - RC2  | disponível (25/08/2017)</h5><br>
 
         <div class="container">
+
           <div class="col-md-auto">
             <div class="card">
               <div class="card-body">
 
                 <div class="container">
                   <div class="row">
+
+                    <!-- win -->       
                     <div class="col">
-                      <a href=""><img src="img/win-icon.png" class="rounded mx-auto d-block" alt="..." width="100" height="70"></a>
+                      <a href="#win" title="Em breve!"><img src="img/win-icon.png" class="rounded mx-auto d-block" alt="..." width="300" height="210"></a>
+
+                      <center><span> <a href="#"></a>Outros downloads | <a href="#"></a>Documentação </span></center>
                     </div>
+                    <!-- /.win -->
+
+
+                    <!-- linux -->
                     <div class="col">
-                      <!-- <img src="img/linux-icon.png" class="rounded mx-auto d-block" alt="..." width="100" height="70"> -->
-                      <!-- <ul>
-                        <li>Versão Recomendada: <a href="">64bits </a></li>
-                        <li>Versão Corrente: <a href="">B</a> </li>
-                      </ul> -->
-                      <img src="img/linux-icon.png" class="rounded mx-auto d-block" alt="..." width="100" height="70">
+
+                      <a href="#linux"><img src="img/linux-icon.png" class="rounded mx-auto d-block" alt="..." width="300" height="210"></a>
+                      
+                      <center><span> <a href=""></a>Outros downloads | <a href="http://www.dpi.inpe.br/terrama2/lib/exe/fetch.php?media=download:linux:manual_instalacao_terrama2_rc2.txt.zip">Documentação</a> </span></center>
                     </div>
-                    <!-- <div class="col-sm">
-                      <img src="img/pdf-icon.png" class="rounded mx-auto d-block" alt="...">
-                    </div> -->
+                    <!-- /.linux -->
+
+
                   </div>
                 </div>
-
-                <!-- <h4 class="card-title">Special title treatment</h4>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a> -->
 
               </div>
             </div>
           </div>
+
         <!-- <div class="col-sm-6">
           <div class="card">
             <div class="card-body">
@@ -165,6 +170,7 @@
             </div>
           </div>
         </div> -->
+
       </div><br><br>
 
      <!--  <div class="container">
@@ -189,7 +195,7 @@
                     </div> -->
         <!--           </div>
                 </div>
- -->
+              -->
                 <!-- <h4 class="card-title">Special title treatment</h4>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a> -->
@@ -197,140 +203,208 @@
               <!-- </div>
             </div>
           </div>
-      </div>  -->
+        </div>  -->
+      </div>
     </div>
 
     <div class="container">
 
-      <div class="mb-4" id="accordion02" role="tablist" aria-multiselectable="true">
+      <!-- Collapse -->
+      <div id="accordion" role="tablist">
         <div class="card">
-          <div class="card-header" role="tab" id="headingTw">
-            <h5 class="mb-0">
-              <a data-toggle="collapse" data-parent="#accordion02" href="#collapseTw" aria-expanded="true" aria-controls="collapseTw">Windows</a>
+          <div class="card-header" role="tab" id="headingOne">
+            <h6 class="mb-0">
+              <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="linux">Linux
+              </a>
             </h5>
           </div>
 
-          <div id="collapseTw" class="collapse show" role="tabpanel" aria-labelledby="headingTw">
-            <div class="card">
-              <div class="card-body">
-                <p>teste</p>
-              </div>
+          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+
+              <ul>
+                <li>
+                  <a href="http://www.dpi.inpe.br/terrama2/lib/exe/fetch.php?media=download:linux:terrama2-4.0.0-rc2-linux-x64-ubuntu-16.04.deb"><b>Download Release 4.0 - RC2</b></a>
+                </li>
+              </ul>
+
+              <p><b>Dependências</b></p>
+
+              <ul>
+                <li><a href="http://www.dpi.inpe.br/terralib5/wiki/doku.php?id=wiki:downloads" target="_blank"><b>Instalador do TerraLib + TerraView 5.2.2</b></a></li>
+                <li><a href="http://www.dpi.inpe.br/terrama2/lib/exe/fetch.php?media=download:linux:terrama2-vmime_0.9.2-ubuntu16.04_amd64.deb"><b>Vmine terrama2-vmime_0.9.2-ubuntu16.04_amd64.deb</b></a></li>
+              </ul>
+
+              <p><strong>IMPORTANTE:</strong> Os testes foram realizados com as versões dos arquivos abaixo. Versões mais recentes poderão estar disponíveis nos respectivos sites, entretanto não garantimos sua utilização:</p>
+
+              <ul>
+                <li>Servidor de Banco de Dados (PostgreSQL 9.5 + PostGIS 2.2)</li>
+                <li>Java 8</li>
+                <li>Apache Java Tomcat 8</li>
+                <li>Servidor de Mapas <a href="http://geoserver.org/release/maintain/" target="_blank"><b>Geoserver 2.10.3</b></a> utilize “Web Archive”</li>
+                <li>nodejs 4.x</li>
+              </ul>
+
             </div>
           </div>
         </div>
-      </div>
+      </div><br><br>
+      <!-- Collapse -->
 
-      <div class="mb-4" id="accordion02" role="tablist" aria-multiselectable="true">
+      <!-- Collapse -->
+      <div id="accordion" role="tablist">
         <div class="card">
           <div class="card-header" role="tab" id="headingTw">
-            <h5 class="mb-0">
-              <a data-toggle="collapse" data-parent="#accordion02" href="#collapseTw" aria-expanded="true" aria-controls="collapseTw">linux</a>
+            <h6 class="mb-0">
+              <a data-toggle="collapse" href="#collapseTw" aria-expanded="true" aria-controls="collapseTw" id="win">Windows (em desenvolvimento)
+              </a>
             </h5>
           </div>
 
-          <div id="collapseTw" class="collapse show" role="tabpanel" aria-labelledby="headingTw">
-            <div class="card">
-              <div class="card-body">
-                <p>teste</p>
-              </div>
+          <div id="collapseTw" class="collapse show" role="tabpanel" aria-labelledby="headingTw" data-parent="#accordion">
+            <div class="card-body">
+
+              <ul>
+                <li>
+                  Instalador do TerraMA² - Release 4.0 <a href="" title="Em Breve!"><b>64 bits</b></a>
+                </li>
+              </ul>
+              <p><b>OBS :</b> Descomprima os arquivos transferidos antes de executar.</p>
+
+              <p><b>Dependências</b></p>
+              <p><strong>IMPORTANTE:</strong> Os testes foram realizados com as versões dos arquivos abaixo. Versões mais recentes poderão estar disponíveis nos respectivos sites, entretanto não garantimos sua utilização:</p>
+
+              <ul>
+                <li>Servidor de Banco de Dados</li>
+                <li>Java</li>
+                <li>Apache Java Tomcat</li>
+                <li>Servidor de Mapas Geoserver</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div><br><br>
+      <!-- Collapse -->
+
+      <!-- Collapse -->
+      <div class="mb-4" id="accordion" role="tablist" aria-multiselectable="true">
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingThr">
+            <h6 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThr" aria-expanded="false" aria-controls="collapseThr" id="historic">Histórico de Versões</a>
+            </h5>
+          </div>
+
+          <div id="collapseThr" class="collapse" role="tabpanel" aria-labelledby="headingThr">
+            <div class="card-body">
+              <ul>
+                <li>Release 1.0 - 11/07/2008 - Terralib 3.2 e TerraPHP</li>
+                <li>Release 2.0 - 24/07/2009 - Terralib 3.3 e TerraPHP - Inclui módulo de ADM para serviços</li>
+                <li>Release 3.0 - 18/07/2012 - Terralib 4.2.1 e TerraOGC - Novo módulo Web em java e serviços OGC. Inclui dados de ocorrências (ex: focos queimadas)</li>
+                <li>Release 3.0.1 - 15/03/2013 - Terralib 4.2.2 e TerraOGC - Correções</li>
+                <li>Release 3.0.2 - 11/10/2013 - Terralib 4.2.2 e TerraOGC - Correções, versão em espanhol, importadores/exportação de servidores e séries de dados por meio de arquivos XML.</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+      <!-- /.Collapse -->
 
-</div>
-
-
-  <!-- Footer -->
-  <footer class="mainfooter">
-    <div class="footer-top p-y-2">
-      <div class="container-fluid">
-
-      </div>
     </div>
-    <div class="footer-middle">
-      <div class="container">
-        <div class="row">
 
-          <div class="col-6 col-md-4">
-            <!--Column1-->
-            <div class="footer-pad">
-              <h4>Sobre</h4>
-              <ul class="list-unstyled">
-                <li><a href="#"></a></li>
-                <li><a href="about.html">TerraMA²</a></li>
-                <li><a href="team.html">Equipe</a></li>
-                <li><a href="architecture.html">Arquitetura</a></li>
-                <li><a href="contact.html">Contato</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-6 col-md-4">
-            <!--Column1-->
-            <div class="footer-pad">
-              <h4>Projetos</h4>
-              <ul class="list-unstyled">
-                <li><a href="#"></a></li>
-                <li><a href="projects.html">Projetos</a></li>
-                <li><a href="#" data-toggle="tooltip" data-placement="left" title="Em Breve!">Estudos de Caso</a></li>
-              </ul>
-            </div>
 
-            <div class="footer-pad">
-              <ul class="list-unstyled">
-                <li><a href="#"></a></li>
-                <li><a href="download.html">Download</a></li>
-                <li><a href="documentation.html">Documentação</a></li>
-                <li><a href="courses.html">Cursos</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-6 col-md-4">
-            <!--Column1-->
-            <div class="footer-pad">
-              <h4>Endereço</h4>
+    <!-- Footer -->
+    <footer class="mainfooter">
+      <div class="footer-top p-y-2">
+        <div class="container-fluid">
 
-              <p>Avenida dos Astronautas, 1.758 Jardim da Granja CEP: 12227 010 São José dos Campos - SP</p>
-            </div>
-            <div class="footer-pad">
-              <div class="mx-auto" style="width: 200px;">
-                <a href="http://www.inpe.br/" target="_blank"><img src="img/logo-inpe.png" width="50" height="40" class="rounded mx-auto d-block" alt="Logotipo do INPE"></a>
+        </div>
+      </div>
+      <div class="footer-middle">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-6 col-md-4">
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4>Sobre</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#"></a></li>
+                  <li><a href="about.html">TerraMA²</a></li>
+                  <li><a href="team.html">Equipe</a></li>
+                  <li><a href="architecture.html">Arquitetura</a></li>
+                  <li><a href="contact.html">Contato</a></li>
+                </ul>
               </div>
             </div>
-          </div>
-        </div> 
-      </div>
+            <div class="col-6 col-md-4">
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4>Projetos</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#"></a></li>
+                  <li><a href="projects.html">Projetos</a></li>
+                  <li><a href="#" data-toggle="tooltip" data-placement="left" title="Em Breve!">Estudos de Caso</a></li>
+                </ul>
+              </div>
 
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <!--Footer Bottom-->
-            <p>&copy; Copyright 2017 TerraMA².  All rights reserved.</p>
+              <div class="footer-pad">
+                <ul class="list-unstyled">
+                  <li><a href="#"></a></li>
+                  <li><a href="download.html">Download</a></li>
+                  <li><a href="documentation.html">Documentação</a></li>
+                  <li><a href="courses.html">Cursos</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4>Endereço</h4>
+
+                <p>Avenida dos Astronautas, 1.758 Jardim da Granja CEP: 12227 010 São José dos Campos - SP</p>
+              </div>
+              <div class="footer-pad">
+                <div class="mx-auto" style="width: 200px;">
+                  <a href="http://www.inpe.br/" target="_blank"><img src="img/logo-inpe.png" width="50" height="40" class="rounded mx-auto d-block" alt="Logotipo do INPE"></a>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <!--Footer Bottom-->
+              <p>&copy; Copyright 2017 TerraMA².  All rights reserved.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- /.Footer -->
+    </footer>
+    <!-- /.Footer -->
 
-  <!-- Gov -->
-  <script defer="defer" src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
-  <!-- /.Gov -->
+    <!-- Gov -->
+    <script defer="defer" src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+    <!-- /.Gov -->
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/popper/popper.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-  <!-- Script tooltip -->
-  <script>
-    $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();   
-    });
-  </script>
+    <!-- Script tooltip -->
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+      });
+    </script>
 
 
-</body>
-</html>
+  </body>
+  </html>
