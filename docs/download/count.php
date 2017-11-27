@@ -14,8 +14,8 @@
 
 	header('docs/download/terrama2-4.0.0-rc2-linux-x64-ubuntu-16.04.deb');
 
-	$hit_count = @file_get_contents('count_file.txt');
-	echo $hit_count;
+	// $hit_count = @file_get_contents('count_file.txt');
+	// echo $hit_count;
 
 	?>
 	
