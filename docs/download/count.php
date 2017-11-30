@@ -23,3 +23,6 @@
 </html>
 
 <!-- http://www.kavoir.com/2010/05/simplest-php-hit-counter-or-download-counter-count-the-number-of-times-of-access-visits-or-downloads.html -->
+
+
+<!-- curl https://api.github.com/repos/faahbih/wordpress-tutorial/releases pelo postman-->
