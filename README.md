@@ -61,3 +61,10 @@ Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework 
 
 Copyright 2013-2017 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-modern-business/blob/gh-pages/LICENSE) license.
  -->
+
+
+ .. image:: mockup.png
+    :width: 200px
+    :align: center
+    :height: 100px
+    :alt: alternate text
