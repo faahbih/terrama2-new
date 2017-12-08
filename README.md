@@ -63,8 +63,4 @@ Copyright 2013-2017 Blackrock Digital LLC. Code released under the [MIT](https:/
  -->
 
 
- .. image:: mockup.png
-    :width: 200px
-    :align: center
-    :height: 100px
-    :alt: alternate text
+ ![Mockup](mockup.png)
